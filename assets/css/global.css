@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+.main{
+    padding: 1rem;
+    margin: 1rem;
+    border:1px solid #fff;
+    border-radius: 1rem;
+}
