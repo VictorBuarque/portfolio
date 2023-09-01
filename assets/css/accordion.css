@@ -1,0 +1,57 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+    border: 1px solid #7357A6;
+    border-radius: 1rem;
+}
+
+.accordion.open {
+    border-color: #fff;
+}
+
+.accordion .trigger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border: 1px solid #7357A6;
+    border-radius: 1rem;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: start;
+}
+
+.accordion .trigger::after {
+    content: '';
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assets/images/icons/arrow-top.svg');
+}
+
+.accordion.open .trigger::after {
+    transform: rotate(180deg);
+}
+
+.accordion .content {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    padding: 0rem 1rem 1rem 3rem; 
+}
+
+.accordion.open .content {
+    height: auto;
+    opacity: 1;
+    padding: 1rem;
+}

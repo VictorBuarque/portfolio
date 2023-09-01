@@ -1,0 +1,28 @@
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.languages li {
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    filter: brightness(0) invert(1); /* Colocado aqui para afetar o ícone */
+
+}
+
+.languages li::before {
+    content: '';
+    display: inline-block;
+    width: 1rem; /* Ajustado para manter o ícone em uma proporção mais adequada */
+    height: 1rem; /* Ajustado para manter o ícone em uma proporção mais adequada */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assets/images/icons/check.svg');
+    margin-right: 0.5rem;
+}

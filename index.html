@@ -19,9 +19,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/acordeon.css">
-    <!-- JS -->
-
+    <link rel="stylesheet" href="assets/css/accordion.css">
+    <link rel="stylesheet" href="assets/css/languages.css">
+    <link rel="stylesheet" href="assets/css/portifolio.css">
+    <link rel="stylesheet" href="assets/css/experience.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
 </head>
 <body>
     
@@ -31,37 +33,127 @@
             <div class="info">
                 <h1 class="title">Olá,<br> eu sou Victor Buarque</h1>
                 <p class="job">Web Developer</p>
-                <p class="location" >Salvador - BR</p>
-                <p class="phone">(71)999999999</p>
-                <p class="email">vcgabriel38@gmail.com</p>
+                <p class="location">Salvador(BA) -BR</p>
+                <p class="phone">
+                    <a href="tel:(71)999999999">(71)999999999</a>
+                </p>
+                <p class="email">
+                    <a href="mailto:vcgabriel38@gmail.com">Gmail</a>
+                </p>
             </div>
         </header>
-        <section class="acordeon open">
+        <section class="accordion open">
             <button class="trigger" type="button">
-                Skills
+                Habilidades
             </button>
             <div class="content">
-                    <h3>Habilidades Profissionais:</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Javascript</li>
-                        <li>Python</li>
-                        <li>MySQL</li>
-                        <li>PHP</li>
-                    </ul>
+                <div class="skills">
+                    <section class="tools">
+                        <h3>Stacks:</h3>
+                        <ul>
+                            <li>
+                                <img src="assets/images/icons/stacks/html.png" alt="HTML" title="HTML">
+                            </li>
+                            <li>
+                                <img src="assets/images/icons/stacks/css.png" alt="CSS" title="CSS">
+                            </li>
+                            <li>
+                                <img src="assets/images/icons/stacks/js.png" alt="JS" title="JS">
+                            </li>
+                            <li>
+                                <img src="assets/images/icons/stacks/python.png" alt="PYTHON" title="PYTHON">
+                            </li>
+                            <li>
+                                <img src="assets/images/icons/stacks/php.png" alt="PHP" title="PHP">
+                            </li>
+                            <li>
+                                <img src="assets/images/icons/stacks/github.png" alt="Github" title="Github">
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="personal">
+                        <h3>Pessoal:</h3>
+                        <ul>
+                            <li>Comunicativo</li>
+                            <li>Proativo</li>
+                            <li>Trabalho em Equipe</li>
+                            <li>Comprometimento com Resultados</li>
+                            <li>Flexível</li>
+                        </ul>
+                    </section>
                 </div>
+            </div>
+        </section>
+        <section class="accordion">
             <button class="trigger" type="button">
                 Idiomas
             </button>
-            <div class="content open" type="button">
-                <ul>
-                    <li>Português</li>
-                    <li>Inglês</li>
-                    <li>Espanhol</li>
+            <div class="content">
+                <h3>Nivel de fluência:</h3>
+                <ul class="languages">
+                    <li>Português: Fluente</li>
+                    <li>Inglês: Intermediário</li>
+                    <li>Espanhol: Básico</li>
                 </ul>
             </div>
         </section>
+        <section class="accordion">
+            <button class="trigger" type="button">
+                Portifólio
+            </button>
+            <div class="content">
+                <h3>Projetos Desenvolvidos:</h3>
+                <ul class="portfolio">
+                    <li>
+                        <span class="title github">Pokedex</span>
+                        <a href="https://www.github.com/VictorBuarque/Pokedex" target="_blank">https://www.github.com/
+                            VictorBuarque/Pokedex</a>
+                    </li>
+                    <li>
+                        <span class="title github">Demon Slayer - Memory Game</span>
+                        <a href="https://github.com/VictorBuarque/Memory-Game" target="_blank">https://github.com/
+                            VictorBuarque/Memory-Game</a>
+                    </li>
+                    <li>
+                        <span class="title github">Searchbar</span>
+                        <a href="https://github.com/VictorBuarque/searchbar" target="_blank">https://github.com/
+                            VictorBuarque/searchbar</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="accordion">
+            <button class="trigger" type="button">
+                Experiência 
+                Profissional 
+            </button>
+            <div class="content">
+                <ul class="experience">
+                    <li>
+                        <h3 class="title">Estágio</h3>
+                        <p class="period">02/09/2023</p>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Velit possimus laborum dolores voluptatibus amet quis dolore 
+                            molestias explicabo temporibus iure est laudantium, minima 
+                            consequuntur magni, accusamus quia fugiat sequi incidunt.
+                        </p>
+                    </li>
+                    <li>
+                        <h4 class="title">Estágio</h4>
+                        <p class="period">02/09/2023</p>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Velit possimus laborum dolores voluptatibus amet quis dolore 
+                            molestias explicabo temporibus iure est laudantium, minima 
+                            consequuntur magni, accusamus quia fugiat sequi incidunt.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    <!-- JS -->
+    <script src="assets/js/accordion.js"></script>
     </div>
 </body>
 </html>

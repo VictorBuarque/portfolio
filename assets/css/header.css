@@ -2,24 +2,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid #7357A6 ;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    
+}
+.header:hover{
+    border-color: #fff;
 }
 .header .photo{
+    margin: 0 auto;
     width: 200px;   
     height: 200px;
     border-radius: 50%;
-    border:2px solid #fff
+    border:2px solid #7357A6;
 }
 .header .title{
     text-align: center;
 }
 .info{
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     font-family: 'Exo 2', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    padding: 1rem;
     
 }
 .info p{
@@ -27,20 +36,19 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1.15rem;
+    font-size: 1rem;
     background-repeat: no-repeat;
     background-size: contain;
     filter: brightness(0) invert(1);
-    
 }
 .info p::before{
     display: inline-block;
-
     content:'';
     width: 24px;
     height: 24px;
     padding-right: .75rem;
 }
+
 .info .job{
     background-image: url('/assets/images/icons/job.svg');
 }
@@ -54,7 +62,6 @@
 }
 .info .phone{
     background-image: url('/assets/images/icons/phone.svg');
-    
 }
 @media only screen and (min-width: 768px) {
     .header {
@@ -77,5 +84,6 @@
 
     .info {
         grid-area: information;
+        
     }
 }
