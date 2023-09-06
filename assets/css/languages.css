@@ -6,6 +6,7 @@
     list-style: none;
 }
 
+
 .languages li {
     padding-right: 1rem;
     display: flex;
@@ -13,7 +14,7 @@
     font-weight: 700;
     font-size: 1.25rem;
     filter: brightness(0) invert(1); /* Colocado aqui para afetar o ícone */
-
+    margin-left: 1rem;
 }
 
 .languages li::before {

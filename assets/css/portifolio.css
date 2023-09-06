@@ -13,8 +13,9 @@
     justify-content: flex-start;
     margin: 1rem 0;
     list-style: none;
+    
 }
-.portfolio li .title {
+.portfolio li h3{
     display: flex;
     align-items: center;
     font-size: 1.25rem;
@@ -22,7 +23,7 @@
     margin-bottom: 0.5rem;
 }
 /* Adiciona imagem ao accordion */
-.portfolio li .title.github::before {
+.portfolio li h3.github::before {
     content: '';
     display: inline-block;
     width: 2rem;

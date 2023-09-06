@@ -1,26 +1,31 @@
-.header{
+/* Estilos para o cabeçalho */
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid #7357A6 ;
+    border: 2px solid #7357A6;
     border-radius: 1rem;
     padding-top: 1rem;
-    
 }
-.header:hover{
+
+.header:hover {
     border-color: #fff;
 }
-.header .photo{
+
+.header .photo {
     margin: 0 auto;
-    width: 200px;   
+    width: 200px;
     height: 200px;
     border-radius: 50%;
-    border:2px solid #7357A6;
+    border: 2px solid #7357A6;
 }
-.header .title{
+
+.header .title {
     text-align: center;
 }
-.info{
+
+/* Estilos para as informações */
+.info {
     font-size: 1.25rem;
     text-align: center;
     font-family: 'Exo 2', sans-serif;
@@ -29,10 +34,10 @@
     align-items: flex-start;
     width: 100%;
     padding: 1rem;
-    
 }
-.info p{
-    margin: .5rem;
+
+.info p {
+    margin: 0.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -40,29 +45,42 @@
     background-repeat: no-repeat;
     background-size: contain;
     filter: brightness(0) invert(1);
-}
-.info p::before{
-    display: inline-block;
-    content:'';
-    width: 24px;
-    height: 24px;
-    padding-right: .75rem;
+    padding-bottom: 1rem;
 }
 
-.info .job{
+.info p::before {
+    display: inline-block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    padding-right: 0.75rem;
+}
+
+.info .job {
     background-image: url('/assets/images/icons/job.svg');
+    background-size: 24px;
 }
-.info .location{
+
+.info .location {
     background-image: url('/assets/images/icons/location.svg');
-    
+    background-size: 24px;
 }
-.info .email{
+.info .email {
     background-image: url('/assets/images/icons/email.svg');
+    background-size: 24px;
+    font-size: 1rem;
+    
     
 }
-.info .phone{
+
+
+
+.info .phone {
     background-image: url('/assets/images/icons/phone.svg');
+    background-size: 24px;
 }
+
+/* Estilos responsivos para telas maiores */
 @media only screen and (min-width: 768px) {
     .header {
         display: grid;
@@ -84,6 +102,12 @@
 
     .info {
         grid-area: information;
-        
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .info .email {
+        font-size: .7rem;
+        width: 100%;
+        display: inline-flex;
     }
 }
