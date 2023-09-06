@@ -57,16 +57,16 @@
 }
 
 .info .job {
-    background-image: url('/assets/assets/images/icons/job.svg');
+    background-image: url('../images/icons/job.svg');
     background-size: 24px;
 }
 
 .info .location {
-    background-image: url('/assets/assets/images/icons/location.svg');
+    background-image: url('../images/icons/location.svg');
     background-size: 24px;
 }
 .info .email {
-    background-image: url('/assets/assets/images/icons/email.svg');
+    background-image: url('../images/icons/email.svg');
     background-size: 24px;
     font-size: 1rem;
     
@@ -76,7 +76,7 @@
 
 
 .info .phone {
-    background-image: url('/assets/assets/images/icons/phone.svg');
+    background-image: url('../images/icons/phone.svg');
     background-size: 24px;
 }
 
