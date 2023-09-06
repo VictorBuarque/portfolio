@@ -24,6 +24,6 @@
     height: 1rem; /* Ajustado para manter o ícone em uma proporção mais adequada */
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('/assets/images/icons/check.svg');
+    background-image: url('assets/images/icons/check.svg');
     margin-right: 0.5rem;
 }
