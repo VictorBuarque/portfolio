@@ -65,6 +65,11 @@
       "name": "Memory game of Demon Slayer",
       "url": "https://github.com/VictorBuarque/Memory-Game",
       "github": true
+    },
+    {
+      "name": "Calculadora em React",
+      "url": "https://github.com/VictorBuarque/calculator-react-js",
+      "github": true
     }
   ],
   "professionalExperience": [
